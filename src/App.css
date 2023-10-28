@@ -1,0 +1,94 @@
+body {
+  --blue: #05386b;
+  --green: #5cdb95;
+  --white: #edf5e1;
+  --lightGreen: #8ee4af;
+  --lightBlue: #379683;
+}
+#app-header {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  color: var(--blue);
+}
+#todos-container {
+  display: flex;
+  margin: 1em;
+  justify-content: space-around;
+}
+#active-todos,
+#completed-todos {
+  width: 40%;
+}
+#active-todos > h1,
+#completed-todos > h1 {
+  text-align: center;
+  color: var(--blue);
+}
+#active-todos > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: var(--lightBlue);
+  border: none;
+  border-radius: 1em;
+  padding: 1em;
+}
+#completed-todos > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 1em;
+  padding: 1em;
+}
+.active-todo {
+  border: none;
+  padding: 1em;
+  background-color: var(--lightGreen);
+  color: var(--blue);
+  border-radius: 0.5em;
+}
+.completed-todo {
+  border: none;
+  padding: 1em;
+  background-color: var(--lightBlue);
+  color: var(--green);
+  border-radius: 0.5em;
+}
+
+form {
+  background-color: var(--blue);
+  margin: 1em;
+  padding: 1em;
+  border: none;
+  border-radius: 2em;
+  margin-top: 0;
+}
+input {
+  font-size: 2em;
+  background: transparent;
+  border: none;
+  color: var(--white);
+  width: 83%;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: var(--white);
+}
+button[type="submit"] {
+  font-size: 2em;
+  font-weight: bolder;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.8em;
+  margin-left: 1em;
+  background-color: var(--white);
+  color: var(--blue);
+}
+button {
+  cursor: pointer;
+}
